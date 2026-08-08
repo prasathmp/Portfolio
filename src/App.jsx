@@ -5,10 +5,10 @@ function App() {
   // Navigation active section tracking
   const [activeSection, setActiveSection] = useState('about');
   
-  // Interactive growth calculator states
-  const [currentTraffic, setCurrentTraffic] = useState(33333);
-  const [conversionRate, setConversionRate] = useState(2); // 2% default
-  const [avgLeadValue, setAvgLeadValue] = useState(50); // $50 default
+  // Interactive growth calculator states (realistic default metrics for 3+ years SEO / 45+ projects)
+  const [currentTraffic, setCurrentTraffic] = useState(30000);
+  const [conversionRate, setConversionRate] = useState(2.5); // 2.5% default
+  const [avgLeadValue, setAvgLeadValue] = useState(100); // $100 default
   const [calculatedSEO, setCalculatedSEO] = useState({
     growthTraffic: 0,
     leadsGenerated: 0,
@@ -25,10 +25,9 @@ function App() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Growth calculation logic
+  // Growth calculation logic (+185% organic traffic growth = 2.85x multiplier)
   useEffect(() => {
-    // 3 Years of SEO generally yields 2.5x to 4x traffic growth on average for clients. Let's assume a moderate 300% growth factor.
-    const growthTraffic = currentTraffic === 33333 ? 100000 : Math.round(currentTraffic * 3);
+    const growthTraffic = Math.round(currentTraffic * 2.85);
     const leadsGenerated = Math.round((growthTraffic * conversionRate) / 100);
     const addedRevenue = leadsGenerated * avgLeadValue;
 
@@ -184,12 +183,12 @@ function App() {
             <div className="stat-label">Years of SEO Experience</div>
           </div>
           <div className="stat-card">
-            <div className="stat-num">20<span>+</span></div>
-            <div className="stat-label">Successful Projects Managed</div>
+            <div className="stat-num">45<span>+</span></div>
+            <div className="stat-label">Successful Projects Handled</div>
           </div>
           <div className="stat-card">
             <div className="stat-num">100<span>%</span></div>
-            <div className="stat-label">White-Hat SEO Techniques</div>
+            <div className="stat-label">White-Hat SEO Strategies</div>
           </div>
         </div>
 
@@ -391,7 +390,7 @@ function App() {
                 </div>
                 <ul className="exp-bullets">
                   <li>Successfully transitioned to a permanent, full-time associate role after exceeding performance expectations and metrics.</li>
-                  <li>Managed SEO campaigns for nearly 20 concurrent projects, expanding agency expertise in link building, guest blogging outreach, and search compliance.</li>
+                  <li>Managed SEO campaigns for 45+ client projects, expanding agency expertise in link building, guest blogging outreach, and search compliance.</li>
                   <li>Ensured consistent on-time project delivery, resulting in enhanced client satisfaction scores and client retention.</li>
                 </ul>
               </div>
