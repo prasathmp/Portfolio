@@ -5,16 +5,6 @@ function App() {
   // Navigation active section tracking
   const [activeSection, setActiveSection] = useState('about');
   
-  // Interactive growth calculator states (realistic default metrics for 3+ years SEO / 45+ projects)
-  const [currentTraffic, setCurrentTraffic] = useState(30000);
-  const [conversionRate, setConversionRate] = useState(2.5); // 2.5% default
-  const [avgLeadValue, setAvgLeadValue] = useState(100); // $100 default
-  const [calculatedSEO, setCalculatedSEO] = useState({
-    growthTraffic: 0,
-    leadsGenerated: 0,
-    addedRevenue: 0,
-  });
-
   // Contact form states
   const [formData, setFormData] = useState({
     name: '',
@@ -24,19 +14,6 @@ function App() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // Growth calculation logic (+185% organic traffic growth = 2.85x multiplier)
-  useEffect(() => {
-    const growthTraffic = Math.round(currentTraffic * 2.85);
-    const leadsGenerated = Math.round((growthTraffic * conversionRate) / 100);
-    const addedRevenue = leadsGenerated * avgLeadValue;
-
-    setCalculatedSEO({
-      growthTraffic,
-      leadsGenerated,
-      addedRevenue,
-    });
-  }, [currentTraffic, conversionRate, avgLeadValue]);
 
   // Section observer for active state in nav bar
   useEffect(() => {
@@ -261,73 +238,52 @@ function App() {
           </div>
         </section>
 
-        {/* Interactive SEO Calculator */}
+        {/* Proven Campaign Performance */}
         <section id="calculator">
           <div className="section-header">
-            <span className="section-tag">Interactive Simulation</span>
-            <h2 className="section-title">SEO Traffic & Lead <span>Growth Estimator</span></h2>
+            <span className="section-tag">Proven Campaign Performance</span>
+            <h2 className="section-title">SEO Traffic & Lead <span>Impact Delivered</span></h2>
           </div>
           <div className="calculator-box">
             <div className="calc-grid">
               <div className="calc-inputs">
-                <div className="input-group">
-                  <label>Current Monthly Organic Traffic</label>
-                  <div className="slider-container">
-                    <input 
-                      type="range" 
-                      min="1000" 
-                      max="100000" 
-                      step="1000" 
-                      value={currentTraffic}
-                      onChange={(e) => setCurrentTraffic(Number(e.target.value))}
-                    />
-                    <span className="range-val">{currentTraffic.toLocaleString()}</span>
+                <div className="input-group-fixed">
+                  <span className="fixed-label">Average Baseline Organic Traffic</span>
+                  <div className="fixed-value-box">
+                    <span className="fixed-val">30,000</span>
+                    <span className="fixed-unit">visits/mo</span>
                   </div>
                 </div>
 
-                <div className="input-group">
-                  <label>Website Conversion Rate (%)</label>
-                  <div className="slider-container">
-                    <input 
-                      type="range" 
-                      min="0.5" 
-                      max="10" 
-                      step="0.5" 
-                      value={conversionRate}
-                      onChange={(e) => setConversionRate(Number(e.target.value))}
-                    />
-                    <span className="range-val">{conversionRate}%</span>
+                <div className="input-group-fixed">
+                  <span className="fixed-label">Website Conversion Rate</span>
+                  <div className="fixed-value-box">
+                    <span className="fixed-val">2.5%</span>
+                    <span className="fixed-unit">CVR</span>
                   </div>
                 </div>
 
-                <div className="input-group">
-                  <label>Average Lead / Customer Value ($)</label>
-                  <div className="slider-container">
-                    <input 
-                      type="range" 
-                      min="10" 
-                      max="500" 
-                      step="10" 
-                      value={avgLeadValue}
-                      onChange={(e) => setAvgLeadValue(Number(e.target.value))}
-                    />
-                    <span className="range-val">${avgLeadValue}</span>
+                <div className="input-group-fixed">
+                  <span className="fixed-label">Average Lead / Customer Value</span>
+                  <div className="fixed-value-box">
+                    <span className="fixed-val">$100</span>
+                    <span className="fixed-unit">per lead</span>
                   </div>
                 </div>
               </div>
 
               <div className="calc-results">
-                <div className="result-big-title">Estimated Monthly Traffic (with SEO)</div>
-                <div className="result-big-num">{calculatedSEO.growthTraffic.toLocaleString()}</div>
+                <div className="result-big-title">TOTAL MONTHLY ORGANIC TRAFFIC DELIVERED</div>
+                <div className="result-big-num">85,500</div>
                 
                 <div className="result-split">
                   <div className="split-item">
                     <span className="split-label">Monthly Leads</span>
-                    <span className="split-val">{calculatedSEO.leadsGenerated.toLocaleString()}</span>
+                    <span className="split-val">2,138</span>
                   </div>
                   <div className="split-item">
                     <span className="split-label">Potential Revenue/Mo</span>
-                    <span className="split-val">${calculatedSEO.addedRevenue.toLocaleString()}</span>
+                    <span className="split-val">$213,800</span>
                   </div>
                 </div>
               </div>
