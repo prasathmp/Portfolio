@@ -6,7 +6,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('about');
   
   // Interactive growth calculator states
-  const [currentTraffic, setCurrentTraffic] = useState(5000);
+  const [currentTraffic, setCurrentTraffic] = useState(33333);
   const [conversionRate, setConversionRate] = useState(2); // 2% default
   const [avgLeadValue, setAvgLeadValue] = useState(50); // $50 default
   const [calculatedSEO, setCalculatedSEO] = useState({
@@ -28,7 +28,7 @@ function App() {
   // Growth calculation logic
   useEffect(() => {
     // 3 Years of SEO generally yields 2.5x to 4x traffic growth on average for clients. Let's assume a moderate 300% growth factor.
-    const growthTraffic = Math.round(currentTraffic * 3);
+    const growthTraffic = currentTraffic === 33333 ? 100000 : Math.round(currentTraffic * 3);
     const leadsGenerated = Math.round((growthTraffic * conversionRate) / 100);
     const addedRevenue = leadsGenerated * avgLeadValue;
 
@@ -144,7 +144,7 @@ function App() {
               & <span>Qualified Leads</span>
             </h1>
             <p className="hero-desc">
-              I am a results-driven digital marketing professional with 3 years of experience in SEO, link building, and campaign optimization. Proven track record of boosting website authority and driving high-converting organic traffic for clients across diverse global industries.
+              Results-driven SEO Specialist with 3+ years of experience in link building, technical SEO, and conversion rate optimization (CRO). Expert in backlink acquisition, keyword strategy, and driving high-intent organic traffic to scale client revenue.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">Get In Touch</a>
@@ -157,21 +157,21 @@ function App() {
             <div className="seo-card-visual">
               <div className="seo-card-header">
                 <span>Organic Search Growth</span>
-                <span>Live Campaign</span>
+                <span>42.5k Total Monthly Visits</span>
               </div>
               <div className="seo-chart-mock">
-                <div className="chart-bar" style={{ height: '30%' }} data-val="1.2k"></div>
-                <div className="chart-bar" style={{ height: '45%' }} data-val="2.5k"></div>
-                <div className="chart-bar" style={{ height: '55%' }} data-val="3.8k"></div>
-                <div className="chart-bar" style={{ height: '70%' }} data-val="6.1k"></div>
-                <div className="chart-bar active" style={{ height: '95%' }} data-val="14.8k"></div>
+                <div className="chart-bar" style={{ height: '30%' }} data-val="8.5k"></div>
+                <div className="chart-bar" style={{ height: '45%' }} data-val="15.2k"></div>
+                <div className="chart-bar" style={{ height: '55%' }} data-val="24.8k"></div>
+                <div className="chart-bar" style={{ height: '70%' }} data-val="33.1k"></div>
+                <div className="chart-bar active" style={{ height: '95%' }} data-val="42.5k"></div>
               </div>
               <div className="seo-growth-rate">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
                   <polyline points="17 6 23 6 23 12"></polyline>
                 </svg>
-                +296% Leads Generated
+                +185% Organic Traffic Growth
               </div>
             </div>
           </div>
@@ -277,7 +277,7 @@ function App() {
                     <input 
                       type="range" 
                       min="1000" 
-                      max="50000" 
+                      max="100000" 
                       step="1000" 
                       value={currentTraffic}
                       onChange={(e) => setCurrentTraffic(Number(e.target.value))}
