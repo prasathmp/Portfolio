@@ -71,7 +71,7 @@ function CertificationsPage() {
       date: 'March 2025 - 2027',
       badge: '🏅',
       issuerLogo: '🌐',
-      image: '/Instagram marketing Fundamentals.png', // Fallback preview
+      image: '/meta-certified-digital-marketing-associate.png',
       verified: true,
       description: 'Professional Meta marketing program covering Facebook & Instagram campaign management, Meta Pixel retargeting setups, custom audience creation, and creative performance optimization.',
       skillsValidated: [
