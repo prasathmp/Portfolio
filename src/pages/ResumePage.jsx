@@ -65,7 +65,7 @@ function ResumePage() {
           {/* Header Contact Block */}
           <header className="ats-header">
             <h1 className="ats-name">MOHANAPRASATH M</h1>
-            <p className="ats-target-title">SEO TEAM LEAD | TECHNICAL SEO SPECIALIST | ORGANIC GROWTH MANAGER</p>
+            <p className="ats-target-title">SEO TEAM LEAD | TECHNICAL SEO & CRO SPECIALIST</p>
             <div className="ats-contact-line">
               <span>Navalur, Chennai, India - 603103</span> • 
               <span>Phone: <a href="tel:+918682001285">+91 8682001285</a></span> • 
