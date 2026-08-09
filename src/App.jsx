@@ -23,7 +23,7 @@ function HomePage() {
   // Section observer for active state in nav bar
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'skills', 'certifications', 'contact'];
+      const sections = ['home', 'experience', 'skills', 'certifications', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -80,16 +80,17 @@ function HomePage() {
       {/* Header & Nav */}
       <header>
         <div className="header-container">
-          <a href="#about" className="logo">
+          <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             MOHANAPRASATH<span className="logo-dot">.M</span>
-          </a>
+          </Link>
           <nav className="nav-links">
-            <a 
-              href="#about" 
-              className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}
+            <Link 
+              to="/" 
+              className={`nav-link ${activeSection === 'home' || activeSection === 'about' ? 'active' : ''}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              About
-            </a>
+              Home
+            </Link>
             <Link 
               to="/experience" 
               className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}
@@ -128,7 +129,7 @@ function HomePage() {
       {/* Main Content */}
       <main>
         {/* Hero & Profile Description */}
-        <section id="about" className="hero-section">
+        <section id="home" className="hero-section">
           <div className="hero-content">
             <div className="hero-tagline">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
