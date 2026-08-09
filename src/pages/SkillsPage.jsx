@@ -238,9 +238,13 @@ function SkillsPage() {
             <Link to="/skills" className="nav-link active">Skills & Tools</Link>
             <Link to="/certifications" className="nav-link">Certifications</Link>
             <Link to="/contact" className="nav-link">Contact</Link>
-            <Link to="/resume" className="btn-resume">
-              ATS Resume PDF
-            </Link>
+            <a 
+              href="/Mohanaprasath_M___Resume.pdf" 
+              download="Mohanaprasath_M_SEO_Lead_Resume.pdf" 
+              className="btn-resume"
+            >
+              Download Resume
+            </a>
           </nav>
         </div>
       </header>

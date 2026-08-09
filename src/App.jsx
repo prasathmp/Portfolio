@@ -95,12 +95,13 @@ function HomePage() {
             >
               Contact
             </Link>
-            <Link 
-              to="/resume" 
+            <a 
+              href="/Mohanaprasath_M___Resume.pdf" 
+              download="Mohanaprasath_M_SEO_Lead_Resume.pdf"
               className="btn-resume"
             >
-              ATS Resume PDF
-            </Link>
+              Download Resume
+            </a>
           </nav>
         </div>
       </header>
