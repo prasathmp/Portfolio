@@ -247,6 +247,12 @@
   .ats-section-title {
     font-size: 12pt !important;
     border-bottom-color: #000000 !important;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+  .ats-section, .ats-job-block, .education-section, .cert-section {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
   .ats-text, .ats-skills-list li, .ats-bullet-list li, .ats-simple-list li {
     font-size: 10pt !important;

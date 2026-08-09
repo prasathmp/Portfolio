@@ -73,7 +73,7 @@ function ResumePage() {
             </div>
             <div className="ats-links-line">
               <span>LinkedIn: <a href="https://www.linkedin.com/in/mohanaprasath-m-647396264/" target="_blank" rel="noreferrer">linkedin.com/in/mohanaprasath-m</a></span> • 
-              <span>Portfolio: <Link to="/">mohanaprasath-portfolio.vercel.app</Link></span>
+              <span>Portfolio: <a href="https://mohanaprasath-portfolio.vercel.app" target="_blank" rel="noreferrer">mohanaprasath-portfolio.vercel.app</a></span>
             </div>
           </header>
 
@@ -83,7 +83,7 @@ function ResumePage() {
           <section className="ats-section">
             <h2 className="ats-section-title">PROFESSIONAL SUMMARY</h2>
             <p className="ats-text">
-              Results-driven <strong>SEO Team Lead & Senior SEO Specialist</strong> with <strong>3+ years of experience</strong> architecting, executing, and scaling technical SEO, backlink acquisition, and Conversion Rate Optimization (CRO) strategies. Proven track record of managing <strong>45+ client projects</strong> across Travel, E-Commerce, Finance, and B2B sectors—delivering an average of <strong>+185% organic traffic growth</strong> and scaling client search revenue. Expert in Google Search Console (GSC), GA4, GTM, Semrush, Ahrefs, Screaming Frog, Core Web Vitals (INP/LCP/CLS) optimization, and leading cross-functional dev and outreach teams under agency SOPs.
+              Results-driven <strong>SEO Team Lead & Senior SEO Specialist</strong> with <strong>3+ years of experience</strong> architecting, executing, and scaling technical SEO, backlink acquisition, and Conversion Rate Optimization (CRO) strategies. Proven track record of managing <strong>45+ client projects</strong> across Travel, E-Commerce, Finance, and B2B sectors—delivering an average of <strong>+185% organic traffic growth</strong> and scaling client search revenue. Expert in Google Search Console (GSC), GA4, GTM, Semrush, Ahrefs, Screaming Frog, Core Web Vitals optimization, and leading cross-functional dev and outreach teams under agency SOPs.
             </p>
           </section>
 
@@ -91,7 +91,7 @@ function ResumePage() {
           <section className="ats-section">
             <h2 className="ats-section-title">CORE COMPETENCIES & TECHNICAL SKILLS</h2>
             <ul className="ats-skills-list">
-              <li><strong>Technical SEO & Performance:</strong> Core Web Vitals (INP, LCP, CLS), JavaScript Rendering Diagnostics, XML Sitemaps, Robots.txt, Canonical Validation, Schema.org (JSON-LD), Crawl Budget Optimization.</li>
+              <li><strong>Technical SEO & Performance:</strong> Core Web Vitals Optimization, XML Sitemaps, Robots.txt, Canonical Validation, Schema.org (JSON-LD), Crawl Budget Optimization.</li>
               <li><strong>Analytics & Data Attribution:</strong> Google Search Console (GSC), Google Analytics 4 (GA4), Google Tag Manager (GTM), Looker Studio (Automated Executive Dashboards), Conversion Funnel Mapping.</li>
               <li><strong>SEO Software Suite & Auditing:</strong> Semrush Suite, Ahrefs Suite, Screaming Frog SEO Spider, Google Keyword Planner, PageSpeed Insights, Chrome UX Report (CrUX), Hunter.io, BuzzStream.</li>
               <li><strong>On-Page & CRO Strategy:</strong> Search Intent Keyword Mapping, Title & Meta Description CTR Optimization, H1-H6 Hierarchy Restructuring, Internal Link Graph Tuning, Landing Page CTA Placement.</li>
@@ -114,7 +114,7 @@ function ResumePage() {
               <ul className="ats-bullet-list">
                 <li>Lead, mentor, and direct a team of SEO specialists and outreach associates, managing search-marketing operations across 45+ active client accounts.</li>
                 <li>Standardized agency Standard Operating Procedures (SOPs) for technical site auditing, keyword mapping, backlink acquisition, and quality assurance reviews.</li>
-                <li>Direct enterprise technical SEO audits, resolving JavaScript rendering issues, indexation bottlenecks, and structured JSON-LD schema deployments.</li>
+                <li>Direct enterprise technical SEO audits, resolving indexation bottlenecks, crawl errors, and structured JSON-LD schema deployments.</li>
                 <li>Collaborate with web developers and UI/UX designers to integrate search compliance into site builds and production code releases.</li>
                 <li>Formulate growth roadmaps and present monthly organic traffic ROI reports to enterprise stakeholders using automated Looker Studio dashboards.</li>
               </ul>
@@ -129,7 +129,7 @@ function ResumePage() {
               <div className="ats-job-company">Joy Technologies • Chennai, India</div>
               <ul className="ats-bullet-list">
                 <li>Designed and executed end-to-end technical, on-page, and off-page SEO strategies for international client portfolios in Travel, E-Commerce, Finance, and B2B sectors.</li>
-                <li>Diagnosed and resolved Core Web Vitals bottlenecks (LCP, CLS, INP) using Screaming Frog and GSC, improving mobile page speed scores.</li>
+                <li>Diagnosed and resolved Core Web Vitals performance bottlenecks using Screaming Frog and GSC, improving mobile page speed scores.</li>
                 <li>Conducted competitor keyword gap analysis and search intent mapping to capture high-converting transactional search queries.</li>
                 <li>Executed white-hat backlink campaigns, acquiring high-authority DA 50+ contextual backlinks to scale client domain authority scores.</li>
                 <li>Configured GA4 custom events and Google Tag Manager tracking to optimize landing page CTA placements and user conversion paths.</li>
@@ -167,7 +167,7 @@ function ResumePage() {
           </section>
 
           {/* Certifications */}
-          <section className="ats-section">
+          <section className="ats-section cert-section">
             <h2 className="ats-section-title">PROFESSIONAL CERTIFICATIONS</h2>
             <ul className="ats-simple-list">
               <li><strong>Meta Social Media Marketing Professional Certificate</strong> – Meta / Coursera (Issued Mar 2025 | Verification ID: K60DAVWFTGE7)</li>
@@ -179,7 +179,7 @@ function ResumePage() {
           </section>
 
           {/* Education & Personal Details */}
-          <section className="ats-section">
+          <section className="ats-section education-section">
             <h2 className="ats-section-title">EDUCATION & ADDITIONAL DETAILS</h2>
             <ul className="ats-simple-list">
               <li><strong>Degree:</strong> Bachelor's Degree in Relevant Discipline | Tamil Nadu, India</li>
@@ -201,7 +201,7 @@ function ResumePage() {
             <a 
               href="https://www.linkedin.com/in/mohanaprasath-m-647396264/" 
               target="_blank" 
-              rel="noopener noreferrer" 
+              rel="noreferrer" 
               className="social-icon-link"
             >
               🔗 LinkedIn Profile
