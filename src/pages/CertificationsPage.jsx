@@ -11,6 +11,44 @@ function CertificationsPage() {
 
   const certificationsData = [
     {
+      id: 'meta-coursera-professional',
+      title: 'Meta Social Media Marketing Professional Certificate',
+      issuer: 'Meta / Coursera',
+      date: 'March 15, 2025',
+      badge: '🏅',
+      issuerLogo: '🌐',
+      image: '/meta-social-media-marketing-coursera.png',
+      verified: true,
+      verifyUrl: 'https://coursera.org/verify/professional-cert/K60DAVWFTGE7',
+      description: 'Professional 6-course specialization completed through Meta and Coursera. Validates comprehensive mastery of Meta Ads Manager, social content strategy, audience targeting, advertising with Meta, and campaign optimization capstone.',
+      skillsValidated: [
+        'Introduction to Social Media Marketing',
+        'Social Media Management & Strategy',
+        'Fundamentals of Social Media Advertising',
+        'Advertising with Meta Ads Manager',
+        'Measuring & Optimizing Social Media Campaigns',
+        'Meta Social Media Marketing Capstone Project'
+      ]
+    },
+    {
+      id: 'meta-associate-badge',
+      title: 'Meta Certified Digital Marketing Associate',
+      issuer: 'Meta Certified / Meta Blueprint',
+      date: 'March 2025',
+      badge: '🏅',
+      issuerLogo: '♾️',
+      image: '/meta-certified-digital-marketing-associate.png',
+      verified: true,
+      description: 'Official Meta Certified Digital Marketing Associate credential awarded directly by Meta. Demonstrates fundamental proficiency in Meta advertising ecosystem, audience segmentation, campaign objective selection, and digital marketing measurement.',
+      skillsValidated: [
+        'Meta Advertising Ecosystem & Best Practices',
+        'Audience Segmentation & Targeting',
+        'Meta Ad Formats & Placement Optimization',
+        'Campaign Measurement & Performance Analysis',
+        'Meta Business Suite & Ads Manager Setup'
+      ]
+    },
+    {
       id: 'google-ads',
       title: 'Google Ads Search Certification',
       issuer: 'Google',
@@ -63,24 +101,6 @@ function CertificationsPage() {
         'Hashtag & Audience Targeting',
         'Brand Engagement Analytics'
       ]
-    },
-    {
-      id: 'meta-marketing',
-      title: 'Meta Social Media Marketing',
-      issuer: 'Meta / Coursera',
-      date: 'March 2025 - 2027',
-      badge: '🏅',
-      issuerLogo: '🌐',
-      image: '/meta-certified-digital-marketing-associate.png',
-      verified: true,
-      description: 'Professional Meta marketing program covering Facebook & Instagram campaign management, Meta Pixel retargeting setups, custom audience creation, and creative performance optimization.',
-      skillsValidated: [
-        'Meta Ads Manager & Campaign Setup',
-        'Custom & Lookalike Audience Building',
-        'Meta Pixel & Conversion Tracking',
-        'A/B Creative Ad Testing',
-        'ROAS & CAC Optimization'
-      ]
     }
   ];
 
@@ -119,14 +139,14 @@ function CertificationsPage() {
               Professional <span>Certifications</span>
             </h1>
             <p className="certs-hero-subtitle">
-              Industry-accredited certifications from Google, Semrush, Meta, and Great Learning validating 3+ years of expertise in Technical SEO, Search Engine Marketing, and Digital Growth.
+              Industry-accredited certifications from Meta, Google, Semrush, and Great Learning validating 3+ years of expertise in Technical SEO, Search Marketing, and Meta Ads.
             </p>
           </div>
 
           {/* Quick Stats Row */}
           <div className="certs-stats-row">
             <div className="certs-stat-box">
-              <span className="stat-num">4+</span>
+              <span className="stat-num">5+</span>
               <span className="stat-text">Accredited Certifications</span>
             </div>
             <div className="certs-stat-box">
@@ -134,11 +154,11 @@ function CertificationsPage() {
               <span className="stat-text">Verified Credentials</span>
             </div>
             <div className="certs-stat-box">
-              <span className="stat-text-highlight">Google & Semrush</span>
-              <span className="stat-text">Core Authority Badges</span>
+              <span className="stat-text-highlight">Meta & Google</span>
+              <span className="stat-text">Official Badges</span>
             </div>
             <div className="certs-stat-box">
-              <span className="stat-text-highlight">SEO & SEM</span>
+              <span className="stat-text-highlight">SEO & Paid Ads</span>
               <span className="stat-text">Dual Competency</span>
             </div>
           </div>
@@ -193,6 +213,16 @@ function CertificationsPage() {
                     <h2 className="cert-title">{cert.title}</h2>
                     <div className="cert-meta-row">
                       <span className="cert-date-text">Issued: {cert.date}</span>
+                      {cert.verifyUrl && (
+                        <a 
+                          href={cert.verifyUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="verify-link-btn"
+                        >
+                          Verify on Coursera ↗
+                        </a>
+                      )}
                     </div>
                     <p className="cert-desc">{cert.description}</p>
 
