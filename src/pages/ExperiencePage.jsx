@@ -18,7 +18,7 @@ function ExperiencePage() {
           <nav className="nav-links">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/experience" className="nav-link active">Experience</Link>
-            <a href="/#skills" className="nav-link">Skills & Tools</a>
+            <Link to="/skills" className="nav-link">Skills & Tools</Link>
             <a href="/#certifications" className="nav-link">Certifications</a>
             <a href="/#contact" className="nav-link">Contact</a>
             <a 

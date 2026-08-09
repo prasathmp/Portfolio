@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ExperiencePage from './pages/ExperiencePage.jsx';
+import SkillsPage from './pages/SkillsPage.jsx';
 import './App.css';
 
 function HomePage() {
@@ -73,12 +74,12 @@ function HomePage() {
             >
               Experience
             </Link>
-            <a 
-              href="#skills" 
+            <Link 
+              to="/skills" 
               className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}
             >
               Skills & Tools
-            </a>
+            </Link>
             <a 
               href="#certifications" 
               className={`nav-link ${activeSection === 'certifications' ? 'active' : ''}`}
@@ -466,6 +467,12 @@ function HomePage() {
               </div>
             </div>
           </div>
+
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link to="/skills" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              Explore Full Skills & Software Stack →
+            </Link>
+          </div>
         </section>
 
         {/* Certifications */}
@@ -635,6 +642,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/experience" element={<ExperiencePage />} />
+      <Route path="/skills" element={<SkillsPage />} />
     </Routes>
   );
 }
