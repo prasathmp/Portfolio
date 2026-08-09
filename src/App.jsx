@@ -4,6 +4,7 @@ import ExperiencePage from './pages/ExperiencePage.jsx';
 import SkillsPage from './pages/SkillsPage.jsx';
 import CertificationsPage from './pages/CertificationsPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
+import ResumePage from './pages/ResumePage.jsx';
 import './App.css';
 
 function HomePage() {
@@ -94,14 +95,12 @@ function HomePage() {
             >
               Contact
             </Link>
-            <a 
-              href="/Mohanaprasath_M___Resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <Link 
+              to="/resume" 
               className="btn-resume"
             >
-              Download Resume
-            </a>
+              ATS Resume PDF
+            </Link>
           </nav>
         </div>
       </header>
@@ -653,6 +652,7 @@ function App() {
       <Route path="/skills" element={<SkillsPage />} />
       <Route path="/certifications" element={<CertificationsPage />} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/resume" element={<ResumePage />} />
     </Routes>
   );
 }
