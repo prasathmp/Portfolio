@@ -224,6 +224,9 @@
 
 /* --- Print Stylesheet (Clean ATS PDF Export) --- */
 @media print {
+  @page {
+    margin: 10mm 15mm;
+  }
   .no-print {
     display: none !important;
   }
