@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import ExperiencePage from './pages/ExperiencePage.jsx';
 import './App.css';
 
-function App() {
-  // Navigation active section tracking
+function HomePage() {
   const [activeSection, setActiveSection] = useState('about');
   
   // Contact form states
@@ -47,7 +48,7 @@ function App() {
       setIsSubmitting(false);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 5000); // hide message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000);
     }, 1200);
   };
 
@@ -66,12 +67,12 @@ function App() {
             >
               About
             </a>
-            <a 
-              href="#experience" 
+            <Link 
+              to="/experience" 
               className={`nav-link ${activeSection === 'experience' ? 'active' : ''}`}
             >
               Experience
-            </a>
+            </Link>
             <a 
               href="#skills" 
               className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`}
@@ -124,7 +125,7 @@ function App() {
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">Get In Touch</a>
-              <a href="#experience" className="btn-secondary">View Work</a>
+              <Link to="/experience" className="btn-secondary">View Full Experience Page</Link>
             </div>
           </div>
 
@@ -369,6 +370,12 @@ function App() {
                 </ul>
               </div>
             </div>
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link to="/experience" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              Explore Detailed Experience Page & Phase Learnings →
+            </Link>
           </div>
         </section>
 
@@ -620,6 +627,15 @@ function App() {
         </div>
       </footer>
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/experience" element={<ExperiencePage />} />
+    </Routes>
   );
 }
 

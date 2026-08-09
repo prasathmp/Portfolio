@@ -1,0 +1,378 @@
+/* --- Experience Page Specific Styling --- */
+
+.experience-page-container {
+  min-height: 100vh;
+  background: var(--bg-dark, #0a0b0e);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-page-header {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  z-index: 100;
+}
+
+.exp-page-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+  width: 100%;
+}
+
+/* --- Hero --- */
+.exp-page-hero {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.exp-hero-tag {
+  color: var(--primary, #10b981);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.exp-hero-title {
+  font-family: var(--heading, 'Outfit', sans-serif);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.exp-hero-title span {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exp-hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted, #94a3b8);
+  max-width: 750px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+/* --- Quick Stats Banner --- */
+.exp-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  background: var(--card-bg, #111318);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.exp-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+}
+
+.exp-stat-box:last-child {
+  border-right: none;
+}
+
+.exp-stat-box .stat-num {
+  font-family: var(--heading, 'Outfit', sans-serif);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary, #10b981);
+}
+
+.exp-stat-box .stat-text-highlight {
+  font-family: var(--heading, 'Outfit', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.exp-stat-box .stat-text {
+  font-size: 0.88rem;
+  color: var(--text-muted, #94a3b8);
+  margin-top: 0.25rem;
+}
+
+/* --- Timeline & Roles --- */
+.exp-timeline-section {
+  margin-bottom: 5rem;
+}
+
+.detailed-roles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.role-card {
+  background: linear-gradient(135deg, rgba(17, 19, 24, 0.95), rgba(10, 11, 14, 0.95));
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  border-radius: 20px;
+  padding: 2.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.role-card:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.05);
+  transform: translateY(-3px);
+}
+
+.role-card.primary-role {
+  border-color: rgba(16, 185, 129, 0.5);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(17, 19, 24, 0.95));
+}
+
+.role-card-badge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: var(--primary, #10b981);
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.role-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.role-icon-box {
+  background: rgba(16, 185, 129, 0.12);
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.role-title-group {
+  flex: 1;
+}
+
+.role-title-group h2 {
+  font-family: var(--heading, 'Outfit', sans-serif);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.role-company-location {
+  font-size: 0.95rem;
+  color: var(--text-muted, #94a3b8);
+}
+
+.company-name {
+  color: var(--primary, #10b981);
+  font-weight: 600;
+}
+
+.role-duration-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.role-summary {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e2e8f0;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+/* --- Role Grid (Responsibilities vs Learnings) --- */
+.role-details-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.column-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.column-title svg {
+  color: var(--primary, #10b981);
+}
+
+.details-list, .learnings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.details-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted, #94a3b8);
+}
+
+.details-list li strong {
+  color: #fff;
+}
+
+.details-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--primary, #10b981);
+  font-weight: bold;
+}
+
+.learnings-column {
+  background: rgba(16, 185, 129, 0.03);
+  border: 1px dashed rgba(16, 185, 129, 0.2);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.learnings-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+.learnings-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary, #10b981);
+  font-weight: bold;
+}
+
+/* --- Role Skill Badges --- */
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.role-tags .tag {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  color: var(--primary, #10b981);
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+/* --- CTA Banner --- */
+.exp-page-cta {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(17, 19, 24, 0.8));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.exp-page-cta h2 {
+  font-family: var(--heading, 'Outfit', sans-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .exp-stats-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .exp-stat-box {
+    border-right: none;
+    border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+    padding-bottom: 1rem;
+  }
+  .exp-stat-box:nth-child(3), .exp-stat-box:nth-child(4) {
+    border-bottom: none;
+  }
+  .role-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .exp-hero-title {
+    font-size: 2.5rem;
+  }
+  .exp-stats-row {
+    grid-template-columns: 1fr;
+  }
+  .exp-stat-box {
+    border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  }
+  .exp-stat-box:last-child {
+    border-bottom: none;
+  }
+  .role-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .role-card-badge {
+    position: static;
+    margin-bottom: 1rem;
+  }
+  .cta-actions {
+    flex-direction: column;
+  }
+}
