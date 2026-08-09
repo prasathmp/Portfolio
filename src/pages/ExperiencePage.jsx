@@ -13,7 +13,7 @@ function ExperiencePage() {
       <header className="exp-page-header">
         <div className="header-container">
           <Link to="/" className="logo">
-            MOHANAPRASATH<span className="logo-dot">.M</span>
+            MOHANAPRASATH <span className="logo-dot">M</span>
           </Link>
           <nav className="nav-links">
             <Link to="/" className="nav-link">Home</Link>

@@ -81,7 +81,7 @@ function HomePage() {
       <header>
         <div className="header-container">
           <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            MOHANAPRASATH<span className="logo-dot">.M</span>
+            MOHANAPRASATH <span className="logo-dot">M</span>
           </Link>
           <nav className="nav-links">
             <Link 
