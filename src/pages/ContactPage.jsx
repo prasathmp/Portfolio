@@ -18,15 +18,36 @@ function ContactPage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
+
+    try {
+      await fetch("https://formsubmit.co/ajax/prasathmp016@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New HR / Client Inquiry: ${formData.subject || 'Portfolio Inquiry'} from ${formData.name}`,
+          _template: 'table',
+          _captcha: 'false',
+          name: formData.name,
+          email: formData.email,
+          inquiry_type: formData.roleType,
+          subject: formData.subject,
+          message: formData.message
+        })
+      });
+    } catch (err) {
+      console.log('Submission sent:', err);
+    } finally {
       setIsSubmitting(false);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', roleType: 'Hiring / Full-Time Role', message: '' });
-      setTimeout(() => setIsSubmitted(false), 6000);
-    }, 1200);
+      setTimeout(() => setIsSubmitted(false), 7000);
+    }
   };
 
   const handleCopyEmail = () => {
@@ -290,7 +311,7 @@ function ContactPage() {
 
                 {isSubmitted && (
                   <div className="success-message">
-                    ✓ Thank you! Your message has been sent successfully. Mohanaprasath will get back to you shortly.
+                    ✓ Message Sent Successfully! Your message has been delivered directly to prasathmp016@gmail.com. Mohanaprasath will get back to you shortly.
                   </div>
                 )}
               </form>

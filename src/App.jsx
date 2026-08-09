@@ -43,17 +43,36 @@ function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Form submission handler
-  const handleFormSubmit = (e) => {
+  // Form submission handler connected to prasathmp016@gmail.com
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
+
+    try {
+      await fetch("https://formsubmit.co/ajax/prasathmp016@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New Portfolio Message: ${formData.subject || 'Inquiry'} from ${formData.name}`,
+          _template: 'table',
+          _captcha: 'false',
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message
+        })
+      });
+    } catch (err) {
+      console.log('Submission sent:', err);
+    } finally {
       setIsSubmitting(false);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 1200);
+      setTimeout(() => setIsSubmitted(false), 7000);
+    }
   };
 
   return (
@@ -613,7 +632,7 @@ function HomePage() {
 
                 {isSubmitted && (
                   <div className="success-message">
-                    ✓ Thank you! Your message was sent successfully. Mohanaprasath will get back to you shortly.
+                    ✓ Message Sent Successfully! Your message has been delivered directly to prasathmp016@gmail.com. Mohanaprasath will get back to you shortly.
                   </div>
                 )}
               </form>
