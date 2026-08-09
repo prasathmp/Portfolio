@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import ExperiencePage from './pages/ExperiencePage.jsx';
 import SkillsPage from './pages/SkillsPage.jsx';
+import CertificationsPage from './pages/CertificationsPage.jsx';
 import './App.css';
 
 function HomePage() {
@@ -80,12 +81,12 @@ function HomePage() {
             >
               Skills & Tools
             </Link>
-            <a 
-              href="#certifications" 
+            <Link 
+              to="/certifications" 
               className={`nav-link ${activeSection === 'certifications' ? 'active' : ''}`}
             >
               Certifications
-            </a>
+            </Link>
             <a 
               href="#contact" 
               className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
@@ -518,6 +519,12 @@ function HomePage() {
               <div className="cert-date">Sept 2023 - 2024</div>
             </div>
           </div>
+
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <Link to="/certifications" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              View Verified Certifications & Credentials Page →
+            </Link>
+          </div>
         </section>
 
         {/* Contact Form & Contact Details */}
@@ -643,6 +650,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/experience" element={<ExperiencePage />} />
       <Route path="/skills" element={<SkillsPage />} />
+      <Route path="/certifications" element={<CertificationsPage />} />
     </Routes>
   );
 }

@@ -19,7 +19,7 @@ function ExperiencePage() {
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/experience" className="nav-link active">Experience</Link>
             <Link to="/skills" className="nav-link">Skills & Tools</Link>
-            <a href="/#certifications" className="nav-link">Certifications</a>
+            <Link to="/certifications" className="nav-link">Certifications</Link>
             <a href="/#contact" className="nav-link">Contact</a>
             <a 
               href="/Mohanaprasath_M___Resume.pdf" 
