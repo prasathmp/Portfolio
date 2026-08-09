@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import ExperiencePage from './pages/ExperiencePage.jsx';
 import SkillsPage from './pages/SkillsPage.jsx';
 import CertificationsPage from './pages/CertificationsPage.jsx';
+import ContactPage from './pages/ContactPage.jsx';
 import './App.css';
 
 function HomePage() {
@@ -87,12 +88,12 @@ function HomePage() {
             >
               Certifications
             </Link>
-            <a 
-              href="#contact" 
+            <Link 
+              to="/contact" 
               className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}
             >
               Contact
-            </a>
+            </Link>
             <a 
               href="/Mohanaprasath_M___Resume.pdf" 
               target="_blank" 
@@ -651,6 +652,7 @@ function App() {
       <Route path="/experience" element={<ExperiencePage />} />
       <Route path="/skills" element={<SkillsPage />} />
       <Route path="/certifications" element={<CertificationsPage />} />
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 }

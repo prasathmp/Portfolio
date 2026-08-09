@@ -117,7 +117,7 @@ function CertificationsPage() {
             <Link to="/experience" className="nav-link">Experience</Link>
             <Link to="/skills" className="nav-link">Skills & Tools</Link>
             <Link to="/certifications" className="nav-link active">Certifications</Link>
-            <a href="/#contact" className="nav-link">Contact</a>
+            <Link to="/contact" className="nav-link">Contact</Link>
             <a 
               href="/Mohanaprasath_M___Resume.pdf" 
               target="_blank" 
