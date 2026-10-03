@@ -1,11 +1,47 @@
-# robots.txt for Mohanaprasath M Portfolio (lifeofprasath.com)
+# robots.txt for Mohanaprasath M Portfolio (www.lifeofprasath.com)
+# Grants 100% unrestricted crawling and indexing access for all search engine bots and AI crawlers.
+
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://www.lifeofprasath.com/sitemap.xml
-Sitemap: https://mohanaprasath-portfolio.vercel.app/sitemap.xml
-
-# LLM & AI Knowledge Base Files
+Allow: /experience
+Allow: /skills
+Allow: /certifications
+Allow: /contact
+Allow: /resume
+Allow: /sitemap.xml
+Allow: /robots.txt
 Allow: /llms.txt
 Allow: /llms-full.txt
+Allow: /assets/
+Allow: /*.pdf$
+Allow: /*.svg$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.xml$
+
+# Googlebot Specific Rules
+User-agent: Googlebot
+Allow: /
+
+# Googlebot-Image Rules
+User-agent: Googlebot-Image
+Allow: /
+
+# Bingbot Rules
+User-agent: Bingbot
+Allow: /
+
+# AI Crawlers & Search Engines (ChatGPT, Perplexity, Claude)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# XML Sitemaps
+Sitemap: https://www.lifeofprasath.com/sitemap.xml
+Sitemap: https://mohanaprasath-portfolio.vercel.app/sitemap.xml
