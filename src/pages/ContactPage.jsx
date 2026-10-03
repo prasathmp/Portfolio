@@ -16,6 +16,7 @@ function ContactPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Contact & Hiring Channel | Mohanaprasath M";
   }, []);
 
   const handleFormSubmit = async (e) => {

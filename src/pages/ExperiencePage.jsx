@@ -5,6 +5,7 @@ import './ExperiencePage.css';
 function ExperiencePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Work Experience & Career Timeline | Mohanaprasath M";
   }, []);
 
   return (

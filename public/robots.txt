@@ -1,0 +1,10 @@
+# robots.txt for Mohanaprasath M Portfolio
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://mohanaprasath-portfolio.vercel.app/sitemap.xml
+
+# LLM & AI Knowledge Base Files
+Allow: /llms.txt
+Allow: /llms-full.txt

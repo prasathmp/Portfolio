@@ -7,6 +7,7 @@ function CertificationsPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Verified Certifications & Credentials | Mohanaprasath M";
   }, []);
 
   const certificationsData = [

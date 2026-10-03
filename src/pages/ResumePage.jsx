@@ -5,6 +5,7 @@ import './ResumePage.css';
 function ResumePage() {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "SEO Lead Resume PDF | Mohanaprasath M";
   }, []);
 
   const handlePrint = () => {

@@ -7,6 +7,7 @@ function SkillsPage() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "SEO Skills & Software Stack | Mohanaprasath M";
   }, []);
 
   const skillCategories = [
