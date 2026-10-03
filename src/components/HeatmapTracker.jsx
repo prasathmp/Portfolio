@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
  * Microsoft Clarity & Custom Heatmap Tracking Integration Component
  * Tracks click maps, scroll depth, session recordings, and user friction points across all SPA routes.
  */
-export default function HeatmapTracker({ clarityProjectId = 'p753jxyz' }) {
+export default function HeatmapTracker({ clarityProjectId = 'yrv6yp0y6e' }) {
   const location = useLocation();
 
   // Initialize Microsoft Clarity script once on mount
