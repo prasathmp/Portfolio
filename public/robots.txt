@@ -1,8 +1,9 @@
-# robots.txt for Mohanaprasath M Portfolio
+# robots.txt for Mohanaprasath M Portfolio (lifeofprasath.com)
 User-agent: *
 Allow: /
 
 # Sitemaps
+Sitemap: https://www.lifeofprasath.com/sitemap.xml
 Sitemap: https://mohanaprasath-portfolio.vercel.app/sitemap.xml
 
 # LLM & AI Knowledge Base Files
