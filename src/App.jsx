@@ -5,6 +5,7 @@ import SkillsPage from './pages/SkillsPage.jsx';
 import CertificationsPage from './pages/CertificationsPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
+import HeatmapTracker from './components/HeatmapTracker.jsx';
 import './App.css';
 
 function HomePage() {
@@ -667,14 +668,17 @@ function HomePage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/experience" element={<ExperiencePage />} />
-      <Route path="/skills" element={<SkillsPage />} />
-      <Route path="/certifications" element={<CertificationsPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/resume" element={<ResumePage />} />
-    </Routes>
+    <>
+      <HeatmapTracker />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+        <Route path="/skills" element={<SkillsPage />} />
+        <Route path="/certifications" element={<CertificationsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/resume" element={<ResumePage />} />
+      </Routes>
+    </>
   );
 }
 
