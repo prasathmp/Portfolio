@@ -6,6 +6,7 @@ import CertificationsPage from './pages/CertificationsPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 import HeatmapTracker from './components/HeatmapTracker.jsx';
+import CanonicalTracker from './components/CanonicalTracker.jsx';
 import './App.css';
 
 function HomePage() {
@@ -669,6 +670,7 @@ function HomePage() {
 function App() {
   return (
     <>
+      <CanonicalTracker />
       <HeatmapTracker />
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -1,4 +1,28 @@
 {
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "lifeofprasath.com"
+        }
+      ],
+      "destination": "https://www.lifeofprasath.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mohanaprasath-portfolio.vercel.app"
+        }
+      ],
+      "destination": "https://www.lifeofprasath.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!assets/|sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|favicon\\.svg|.*\\.png|.*\\.pdf).*)",
