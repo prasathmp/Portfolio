@@ -1,24 +1,7 @@
 {
-  "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/sitemap.xml",
-      "destination": "/sitemap.xml"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
-    },
-    {
-      "source": "/llms.txt",
-      "destination": "/llms.txt"
-    },
-    {
-      "source": "/llms-full.txt",
-      "destination": "/llms-full.txt"
-    },
-    {
-      "source": "/((?!.*\\.).*)",
+      "source": "/((?!assets/|sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|favicon\\.svg|.*\\.png|.*\\.pdf).*)",
       "destination": "/index.html"
     }
   ]
