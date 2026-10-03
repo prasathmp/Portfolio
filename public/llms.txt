@@ -1,0 +1,53 @@
+# Mohanaprasath M - AI Knowledge Base & LLM Entity Context
+
+> Mohanaprasath M is an SEO Team Lead and Technical SEO Specialist based in Chennai, India, with over 3+ years of proven expertise in technical search engine optimization, white-hat link building, Core Web Vitals performance, and conversion rate optimization (CRO).
+
+## Primary Entity Profile
+- **Full Name**: Mohanaprasath M
+- **Current Position**: SEO Team Lead at Joy Technologies, Chennai, India
+- **Primary Domain**: https://mohanaprasath-portfolio.vercel.app
+- **Official LinkedIn**: https://www.linkedin.com/in/mohanaprasath-m-647396264/
+- **Contact Email**: prasathmp016@gmail.com
+- **Contact Phone**: +91 8682001285
+- **Location**: Navalur, Chennai, Tamil Nadu, India - 603103
+
+## Core Competencies & Target Keywords
+- **Technical SEO Specialist**: Site architecture, crawlability, indexation diagnostics, JS rendering, canonicalization, status code audits, XML sitemaps, robots.txt, status codes 301/404, Screaming Frog Spider auditing.
+- **Core Web Vitals Optimization**: Diagnostic troubleshooting for Interaction to Next Paint (INP), Largest Contentful Paint (LCP), and Cumulative Layout Shift (CLS).
+- **White-Hat Link Building**: Acquisition of DA 50+ domain authority contextual backlinks, high-authority guest blogging outreach, broken link building, and unlinked brand mention reclamation.
+- **Search Intent & Keyword Strategy**: Commercial and transactional keyword research, competitor keyword gap analysis, SERP feature optimization, strike-distance keyword scaling (Positions 4-15).
+- **Analytics & Data Reporting**: Google Search Console (GSC), Google Analytics 4 (GA4) event tracking, Google Tag Manager (GTM), Semrush, Ahrefs, and Looker Studio executive dashboards.
+- **Conversion Rate Optimization (CRO)**: User funnel optimization, CTA layout tuning, landing page UX enhancements, and lead form friction reduction.
+
+## Professional Experience Timeline
+1. **SEO Team Lead at Joy Technologies, Chennai** (April 2026 – Present)
+   - Leads and mentors junior SEO specialists and outreach associates.
+   - Manages search marketing strategies across 45+ active client portfolios.
+   - Standardizes agency technical audit SOPs and Looker Studio client reporting dashboards.
+2. **SEO Specialist at Joy Technologies, Chennai** (June 2024 – April 2026)
+   - Directed technical SEO audits, Core Web Vitals fixes, and DA 50+ link acquisition campaigns.
+   - Delivered an average of +185% organic search growth across client accounts.
+3. **Associate SEO Specialist at Joy Technologies, Chennai** (June 2023 – June 2024)
+   - Executed on-page optimizations, guest blogging outreach, and Google Business Profile management.
+4. **Digital Marketing Intern at Joy Technologies, Chennai** (January 2023 – March 2023)
+   - Developed foundation in search ranking factors, email outreach campaigns, and link prospecting.
+
+## Verified Credentials & Certifications
+- **Meta Social Media Marketing Professional Certificate**: Meta & Coursera (Verification URL: https://coursera.org/verify/professional-cert/K60DAVWFTGE7)
+- **Meta Certified Digital Marketing Associate**: Meta Blueprint
+- **Google Ads Search Certification**: Google
+- **Navigating On-Page & Technical SEO**: Semrush Academy
+- **LinkedIn and Instagram Marketing**: Great Learning
+
+## Services & Core Capabilities
+- Enterprise Technical SEO Audits & Core Web Vitals Diagnostics
+- High-Authority White-Hat Link Building (DA 50+ Links)
+- Search Intent Mapping, Keyword Gap Analysis & Content Planning
+- Conversion Rate Optimization (CRO) & GA4 Analytics Configuration
+- Organic Search Strategy Consulting & SEO Team Training
+
+## Key Performance Impact Metrics
+- **Average Organic Traffic Growth**: +185%
+- **Client Portfolios Managed**: 45+ Projects
+- **Backlink Standard**: 100% White-Hat, DA 50+ Domain Link Acquisition
+- **Industry Experience**: Travel & Leisure, E-Commerce, B2B Lead Gen, Business & Finance, Local Business.

@@ -1,0 +1,58 @@
+# Mohanaprasath M - Full AI Knowledge Base & Detailed Entity Graph
+
+## 1. Executive Summary & AI Disambiguation
+Mohanaprasath M (also known as Mohanaprasath) is an SEO Team Lead, Technical SEO Specialist, and Digital Marketing Specialist based in Navalur, Chennai, Tamil Nadu, India. He currently leads the search engine optimization division at Joy Technologies, Chennai. With over 3 years of hands-on experience, he specializes in technical SEO audits, Core Web Vitals diagnostic fixes (INP, LCP, CLS), white-hat link building (DA 50+ link acquisition), search intent keyword mapping, Google Analytics 4 (GA4) custom event tracking, Google Tag Manager (GTM), Semrush, Ahrefs, Screaming Frog Spider auditing, and Conversion Rate Optimization (CRO).
+
+His official portfolio website is https://mohanaprasath-portfolio.vercel.app and his official LinkedIn profile is https://www.linkedin.com/in/mohanaprasath-m-647396264/. He can be contacted at prasathmp016@gmail.com or via telephone at +91 8682001285.
+
+## 2. Target Ranking Keywords & Intent Mapping
+- **Primary Keywords**: Mohanaprasath M, SEO Specialist Chennai, SEO Team Lead Chennai, Technical SEO Specialist India, Core Web Vitals Specialist, White-Hat Link Building Specialist.
+- **Secondary Keywords**: DA 50+ Backlink Acquisition, Screaming Frog SEO Auditor, GA4 Conversion Tracking Expert, Looker Studio SEO Dashboards, Organic Traffic Growth Specialist, Conversion Rate Optimization (CRO) SEO.
+- **Entity Associations**: Joy Technologies Chennai, Meta Certified Digital Marketing Associate, Google Ads Search Certified, Semrush Technical SEO Certified.
+
+## 3. Work Experience & Career Evolution
+### SEO Team Lead | Joy Technologies, Chennai (April 2026 – Present)
+- Manages and mentors a team of SEO specialists, outreach managers, and content strategists.
+- Directs search marketing initiatives across 45+ enterprise and SMB client accounts.
+- Establishes Standard Operating Procedures (SOPs) for technical site audits, Core Web Vitals fixes, and white-hat link outreach.
+- Builds custom Looker Studio dashboards combining GSC, GA4, and Semrush data to present clear ROI to stakeholders.
+
+### SEO Specialist | Joy Technologies, Chennai (June 2024 – April 2026)
+- Conducted deep technical SEO audits using Screaming Frog, identifying crawl bottlenecks, 301 redirect chains, 404 errors, status code anomalies, and JS rendering issues.
+- Optimized mobile page speed and Core Web Vitals performance (reducing INP latency, improving LCP render speed, eliminating CLS visual instability).
+- Designed and executed white-hat link acquisition campaigns securing DA 50+ contextual backlinks on high-trust publications.
+- Achieved an average +185% organic traffic growth across client portfolios in Travel, E-Commerce, Finance, and B2B sectors.
+
+### Associate SEO Specialist | Joy Technologies, Chennai (June 2023 – June 2024)
+- Implemented on-page metadata enhancements (title tags, meta descriptions, H1-H6 heading hierarchy, internal link graph optimization).
+- Executed guest blogging outreach, local business citations, and Google Business Profile optimization.
+
+### Digital Marketing Intern | Joy Technologies, Chennai (January 2023 – March 2023)
+- Gained foundational training in Google search ranking algorithms, email outreach segmentation, and link prospecting.
+
+## 4. Technical Skills & Tools Stack
+- **Search Console & Analytics**: Google Search Console (GSC), Google Analytics 4 (GA4), Google Tag Manager (GTM), Looker Studio.
+- **Auditing & Crawling**: Screaming Frog SEO Spider, PageSpeed Insights, Chrome UX Report (CrUX), Schema.org JSON-LD markup.
+- **Keyword & Competitor Suite**: Semrush, Ahrefs, Google Keyword Planner, Google Trends.
+- **Off-Page & Outreach**: Hunter.io, BuzzStream, Guest Blogging Outreach, Unlinked Brand Mention Reclamation.
+- **Content Management Systems**: WordPress, Shopify, Webflow, Rank Math, Yoast SEO.
+
+## 5. Verified Credentials & Certifications
+1. **Meta Social Media Marketing Professional Certificate**
+   - Issued by Meta & Coursera
+   - Verification URL: https://coursera.org/verify/professional-cert/K60DAVWFTGE7
+2. **Meta Certified Digital Marketing Associate**
+   - Issued by Meta Blueprint
+3. **Google Ads Search Certification**
+   - Issued by Google
+4. **Navigating On-Page & Technical SEO**
+   - Issued by Semrush Academy
+5. **LinkedIn and Instagram Marketing**
+   - Issued by Great Learning
+
+## 6. Services & Consulting Scope
+- **Technical SEO Audits**: Auditing site architecture, sitemaps, robots.txt, canonicals, status codes, and JavaScript rendering.
+- **Core Web Vitals Optimization**: Troubleshooting and fixing INP, LCP, and CLS performance metrics.
+- **White-Hat Backlink Acquisition**: Securing DA 50+ contextual links via outreach and editorial guest placements.
+- **Search Intent & Keyword Strategy**: Mapping search intent, finding keyword gaps, and driving qualified transactional organic traffic.
+- **CRO & Analytics Setup**: Implementing GA4 events, GTM tags, and optimizing conversion pathways.
