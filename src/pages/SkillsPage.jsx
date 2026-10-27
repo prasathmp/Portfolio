@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getExperienceYears } from '../utils/experienceYears';
 import './SkillsPage.css';
 
 function SkillsPage() {
@@ -259,7 +260,7 @@ function SkillsPage() {
               SEO Skills & <span>Software Stack</span>
             </h1>
             <p className="skills-hero-subtitle">
-              A detailed breakdown of the search platforms, analytics software, technical auditing tools, and strategic leadership frameworks mastered over 3+ years of driving organic search growth.
+              A detailed breakdown of the search platforms, analytics software, technical auditing tools, and strategic leadership frameworks mastered over {getExperienceYears()} years of driving organic search growth.
             </p>
           </div>
 

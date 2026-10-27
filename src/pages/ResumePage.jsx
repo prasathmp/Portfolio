@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getExperienceYears } from '../utils/experienceYears';
 import './ResumePage.css';
 
 function ResumePage() {
@@ -84,7 +85,7 @@ function ResumePage() {
           <section className="ats-section">
             <h2 className="ats-section-title">PROFESSIONAL SUMMARY</h2>
             <p className="ats-text">
-              Results-driven <strong>SEO Team Lead & Senior SEO Specialist</strong> with <strong>3+ years of experience</strong> architecting, executing, and scaling technical SEO, backlink acquisition, and Conversion Rate Optimization (CRO) strategies. Proven track record of managing <strong>45+ client projects</strong> across Travel, E-Commerce, Finance, and B2B sectors—delivering an average of <strong>+185% organic traffic growth</strong> and scaling client search revenue. Expert in Google Search Console (GSC), GA4, GTM, Semrush, Ahrefs, Screaming Frog, Core Web Vitals optimization, and leading cross-functional dev and outreach teams under agency SOPs.
+              Results-driven <strong>SEO Team Lead & Senior SEO Specialist</strong> with <strong>{getExperienceYears()} years of experience</strong> architecting, executing, and scaling technical SEO, backlink acquisition, and Conversion Rate Optimization (CRO) strategies. Proven track record of managing <strong>45+ client projects</strong> across Travel, E-Commerce, Finance, and B2B sectors—delivering an average of <strong>+185% organic traffic growth</strong> and scaling client search revenue. Expert in Google Search Console (GSC), GA4, GTM, Semrush, Ahrefs, Screaming Frog, Core Web Vitals optimization, and leading cross-functional dev and outreach teams under agency SOPs.
             </p>
           </section>
 

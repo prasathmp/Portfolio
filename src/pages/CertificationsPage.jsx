@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getExperienceYears } from '../utils/experienceYears';
 import './CertificationsPage.css';
 
 function CertificationsPage() {
@@ -139,7 +140,7 @@ function CertificationsPage() {
               Professional <span>Certifications</span>
             </h1>
             <p className="certs-hero-subtitle">
-              Industry-accredited certifications from Meta, Google, Semrush, and Great Learning validating 3+ years of expertise in Technical SEO, Search Marketing, and Meta Ads.
+              Industry-accredited certifications from Meta, Google, Semrush, and Great Learning validating {getExperienceYears()} years of expertise in Technical SEO, Search Marketing, and Meta Ads.
             </p>
           </div>
 

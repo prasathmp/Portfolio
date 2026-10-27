@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getExperienceYears } from '../utils/experienceYears';
 import './ExperiencePage.css';
 
 function ExperiencePage() {
@@ -42,14 +43,14 @@ function ExperiencePage() {
               Professional <span>Work Experience</span>
             </h1>
             <p className="exp-hero-subtitle">
-              A comprehensive breakdown of my roles, key responsibilities, strategic impact, and core learnings across 3+ years in SEO and Digital Marketing at Joy Technologies, Chennai.
+              A comprehensive breakdown of my roles, key responsibilities, strategic impact, and core learnings across {getExperienceYears()} years in SEO and Digital Marketing at Joy Technologies, Chennai.
             </p>
           </div>
 
           {/* Quick Stats Banner */}
           <div className="exp-stats-row">
             <div className="exp-stat-box">
-              <span className="stat-num">3+</span>
+              <span className="stat-num">{getExperienceYears()}</span>
               <span className="stat-text">Years SEO Experience</span>
             </div>
             <div className="exp-stat-box">

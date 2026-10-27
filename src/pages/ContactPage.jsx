@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { getExperienceYears } from '../utils/experienceYears';
 import './ContactPage.css';
 
 function ContactPage() {
@@ -206,7 +207,7 @@ function ContactPage() {
                   <span className="fact-icon">⏳</span>
                   <div>
                     <strong>Total Experience:</strong>
-                    <span>3+ Years in SEO, Link Building, Technical Auditing & Team Leadership</span>
+                    <span>{getExperienceYears()} Years in SEO, Link Building, Technical Auditing & Team Leadership</span>
                   </div>
                 </div>
 

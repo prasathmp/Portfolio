@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage.jsx';
 import ResumePage from './pages/ResumePage.jsx';
 import HeatmapTracker from './components/HeatmapTracker.jsx';
 import CanonicalTracker from './components/CanonicalTracker.jsx';
+import { getExperienceYears } from './utils/experienceYears';
 import './App.css';
 
 function HomePage() {
@@ -146,7 +147,7 @@ function HomePage() {
               & <span>Qualified Leads</span>
             </h1>
             <p className="hero-desc">
-              Results-driven SEO Specialist with 3+ years of experience in link building, technical SEO, and conversion rate optimization (CRO). Expert in backlink acquisition, keyword strategy, and driving high-intent organic traffic to scale client revenue.
+              Results-driven SEO Specialist with {getExperienceYears()} years of experience in link building, technical SEO, and conversion rate optimization (CRO). Expert in backlink acquisition, keyword strategy, and driving high-intent organic traffic to scale client revenue.
             </p>
             <div className="hero-actions">
               <a href="#contact" className="btn-primary">Get In Touch</a>
